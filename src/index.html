@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <title>Analytix</title>
+</head>
+
+<body class="bg-green-50">
+    <nav id="nav" class="mx-auto min-w-full px-11 py-6">
+        <!-- flex container -->
+        <div class="flex justify-between items-center">
+            <!-- logo -->
+            <div class="">
+                <p
+                    class="text-lg bg-gradient-to-r from-green-700 via-green-500 to-green-600 bg-clip-text text-center font-bold text-transparent">
+                    Analytix</p>
+            </div>
+            <!-- menu items -->
+            <div class="hidden md:flex items-center justify-center space-x-11">
+                <a href="#" class="transition duration-200 text-green-700 hover:text-green-800 hover:underline">Home</a>
+                <a href="#about"
+                    class="transition duration-200 text-green-700 hover:text-green-800 hover:underline">About</a>
+                <a href="#"
+                    class="transition duration-200 text-green-700 hover:text-green-800 hover:underline">Services</a>
+                <a href="#"
+                    class="transition duration-200 text-green-700 hover:text-green-800 hover:underline">Contact</a>
+            </div>
+            <!-- cta -->
+            <div class="hidden md:block">
+                <a href="#"
+                    class="bg-green-200 text-green-800 px-4 py-2 rounded-md shadow-lg transition duration-200 hover:shadow-xl hover:shadow-green-400">Try
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="hero">
+        <!-- flex container -->
+        <div class="container flex flex-col mx-auto min-h-screen justify-center items-center space-y-8">
+            <h1
+                class="text-6xl bg-gradient-to-r from-green-700 via-green-500 to-green-600 bg-clip-text text-center font-bold text-transparent">
+                Analytix</h1>
+            <h2 class="text-xl text-green-800 text-center">Turning Data into Actionable Insights</h2>
+            <a href="pages/analytix.html"
+                class="bg-green-200 text-green-800 px-6 py-4 rounded-md shadow-lg transition duration-200 hover:shadow-xl hover:shadow-green-400">Get
+                Started</a>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about">
+        <!-- flex container -->
+        <div
+            class="container rounded-2xl -mt-36 flex flex-col space-y-8 mx-auto min-h-screen justify-start items-center py-6 px-6">
+            <h1 class="text-2xl font-bold text-green-700">About</h1>
+
+            <div class="flex flex-col space-y-11">
+                <div class="flex">
+                    <div class="w-1/2 space-y-4">
+                        <p class="text-lg text-green-800">Welcome to Analytix, your one-stop solution for data
+                            analytics. Our mission is to empower businesses with actionable insights derived from data
+                            analysis.</p>
+                        <p class="text-lg text-green-800">At Analytix, we believe that data-driven decision-making
+                            is
+                            crucial for success in today's competitive landscape. Whether you're a small startup or a
+                            large
+                            enterprise, our platform provides the tools and resources you need to unlock the full
+                            potential
+                            of your data.</p>
+                    </div>
+                    <div class="w-1/2 bg-green-200 p-11 flex justify-center space-y-4 items-center flex-col rounded-lg">
+                        <p class="text-xl text-green-800 font-bold">With Analytix, you can:</p>
+                        <ul class="list-disc">
+                            <li class="text-green-800">Visualize and analyze data in real-time</li>
+                            <li class="text-green-800">Identify trends and patterns to drive strategic initiatives
+                            </li>
+                            <li class="text-green-800">Track key performance metrics and monitor business health
+                            </li>
+                            <li class="text-green-800">Make informed decisions backed by data-driven insights</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="text-lg text-green-700">Join thousands of businesses who trust Analytix for their data
+                        analytics needs. Get started today and take your business to the next level.</p>
+                </div>
+                <div class="">
+                    <a href="#" class="bg-green-200 text-green-800 px-6 py-4 rounded-md shadow-lg transition duration-200 hover:shadow-xl hover:shadow-green-400">Upload Your Excel Sheet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="js/dom-manipulation.js"></script>
+    <script type="module" src="js/excel-analysis.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
