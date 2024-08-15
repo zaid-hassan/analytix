@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"
+        integrity="sha512-r22gChDnGvBylk90+2e/ycr3RVrDi8DIOkIGNhJlKfuyQM4tIRAI062MaV8sfjQKYVGjOBaZBOA87z+IhZE9DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <link rel="stylesheet" href="../css/output.css">
+    <title>analytix</title>
+</head>
+
+<body>
+    <!-- upload section -->
+    <section id="upload">
+        <!-- flex container -->
+        <div class="grid grid-cols-1 gap-4 p-6">
+            <!-- Left Section: File Upload -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h1 class="text-xl font-semibold mb-4">Upload your Excel file here</h1>
+                <input type="file" id="file-input" accept=".xlsx" required class="block mb-4">
+                <!-- Make chart and Clear Buttons -->
+                <div class="flex justify-between flex-col">
+                    <form id="properties-form"></form>
+                    <div class="space-x-2 ">
+                        <button id="make-chart"
+                            class="bg-green-200 text-green-800 px-4 py-2 rounded-md shadow-lg transition duration-200 hover:shadow-xl hover:shadow-green-400">Make
+                            Chart</button>
+                        <button id="clear"
+                            class="bg-green-200 text-green-800 px-4 py-2 rounded-md shadow-lg transition duration-200 hover:shadow-xl hover:shadow-green-400">Clear</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section: Chart Container -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4">Chart</h2>
+                <div id="chart-container" class="flex justify-center items-center">
+                    <div id="canvas-container" class="w-full overflow-auto">
+                        <!-- My canvas elements -->
+                    </div>
+                </div>
+                <button id="download-pdf"
+                    class="bg-green-200 text-green-800 px-4 py-2 rounded-md shadow-lg transition duration-200 hover:shadow-xl hover:shadow-green-400">Download
+                    pdf</button>
+            </div>
+        </div>
+
+
+
+
+
+
+    </section>
+
+    <script type="module" src="..//js/dom-manipulation.js"></script>
+    <script type="module" src="../js/excel-analysis.js"></script>
+    <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>
